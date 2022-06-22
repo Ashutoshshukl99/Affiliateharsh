@@ -12,135 +12,13 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Affiliate Harsh</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            width: auto;
-            height: 100vh;
-        }
-
-        a:hover {
-            color: yellow;
-        }
-
-        /* About CSS */
-        #about_p {
-            font-size: 18px;
-        }
-
-        /* Team Earners CSS */
-        .carousel-inner img {
-            border-radius: 10px;
-        }
-
-        .carousel {
-            background-color: #eef4eb;
-        }
-
-        /* Meadia queries */
-        @media only screen and (min-width: 1016px) and (max-width: 1282px) {
-            .media {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-
-        @media only screen and (min-width: 770px) and (max-width: 1600px) {
-            #about_p {
-                text-align: left;
-            }
-        }
-
-        @media only screen and (min-width: 170px) and (max-width: 350px) {
-            #about_p {
-                font-size: 15px;
-            }
-        }
-
-        @media only screen and (min-width: 1016px) and (max-width: 1282px) {
-            .mediafix {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-
-        @media only screen and (min-width: 400px) and (max-width: 1600px) {
-            .w_100 {
-                height: 500px;
-                width: 40%;
-                margin: auto;
-            }
-        }
-
-        @media only screen and (min-width: 401px) and (max-width: 1000px) {
-            .w_100 {
-                width: auto;
-            }
-        }
-
-        @media only screen and (min-width: 800px) and (max-width: 1600px) {
-            .w_100 {
-                width: 30%;
-                height: 600px;
-            }
-        }
-
-
-        /* Contact form CSS */
-        input,
-        select,
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-            display: block;
-            float: center;
-        }
-
-        ::placeholder {
-            padding: 5px;
-        }
-
-        input[type=submit] {
-            background-color: #04AA6D;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 90px;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-
-        .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-
-        label {
-            padding: 5px 0px;
-        }
-    </style>
 </head>
 
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="home">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="font-family: 'Poppins', sans-serif; font-weight: bold;">Affiliate
                 Harsh</a>
@@ -152,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: 'Oswald', sans-serif">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#about">About</a>
@@ -204,7 +82,7 @@
     <hr>
     <!-- Statistic -->
     <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
+        <div class="container px-5 py-24 mx-auto" id="statistic">
             <div class="flex flex-col text-center w-full mb-20">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Learners</h1>
                 <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Almost 1.3k peoples Earning in my mentorship. They
@@ -447,24 +325,14 @@
     <hr>
     <!-- Contact Us -->
     <div id="contact" class="container">
-        <h1 style="font-family: 'Oswald', sans-serif; text-align: center;"
+        <h1 id="contact_h1" style="font-family: 'Oswald', sans-serif; text-align: center;"
             class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Contact <span
                 style="color: red">Us</span>
             <br class="hidden lg:inline-block">
         </h1>
-        <form method="post" class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="Name" class="name" placeholder="Your name..">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" class="email" placeholder="Your Email..">
-
-            <label for="subject">Massage:</label>
-            <textarea id="massage" class="massage" name="subject" placeholder="Your Massage.."
-                style="height:200px"></textarea>
-
-            <input type="submit" value="Submit" class="submit" onclick="submit" style="margin: 10px 0px;">
-        </form>
+        <h2 class="contact-head">Tap here for Contact me on whatsapp</h2><br>
+        <div class="text-center">👇👇👇</div><br>
+        <a href="https://wa.me/916289591091" target="_blank"><img src="whatsapp-logo.png" alt="whatsapp Logo"></a>
     </div>
     <hr>
     <!-- Footer -->
