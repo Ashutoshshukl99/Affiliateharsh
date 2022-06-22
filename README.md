@@ -1,2 +1,2 @@
 # Affiliateharsh
-I website for affiliate marketer
+A website for affiliate marketer
