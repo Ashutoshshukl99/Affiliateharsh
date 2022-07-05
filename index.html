@@ -25,9 +25,9 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span onclick="toggleHide()" class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" onclick="toggleHide()" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: 'Oswald', sans-serif">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -60,7 +60,8 @@
                     <br class="hidden lg:inline-block">
                 </h1>
                 <p style="font-family: 'Poppins', sans-serif;" class="mb-8 leading-relaxed" id="about_p">
-                    Hello, Harsh tiwari this side. I am a Affiliate Marketer. I am helping people to learn digital skills
+                    Hello, Harsh tiwari this side. I am a Affiliate Marketer. I am helping people to learn digital
+                    skills
                     and earn through it. I feel very Happy to see my newly joined team members earning every day. I will
                     teach my team members through call, Emails, massages, webinars etc. Don't think too much bro lets
                     get started.
@@ -68,14 +69,12 @@
                 <div class="flex justify-center">
                     <button
                         class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a
-                            href="https://millionairetrack.com/user/register.php?sponsor=MT000105356"
-                            target="_blank">Start
+                            href="https://millionairetrack.com/user/register.php?sponsor=MT136106" target="_blank">Start
                             now</a></button>
                 </div>
             </div>
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img class="object-cover object-center rounded" alt="hero"
-                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiK1kbxFhF7yLt7TIjYPCAoCgW9oPOpFyY4TsJi4dvTI8WCKqWaIazXes33i8UH2nAUWIBqaj18cfMff4xQk_LVYPIKq8IOUWSoeQ-csRpPUfH_9L8cLOpVHgyGcQq7nAZRabQmnxXUautbbEdR6u6pc74OAOTeVje1va1kr6T7SfP9eSLQ34GRdnM/s1600/Harsh%20image.jpg">
+                <img class="object-cover object-center rounded" alt="hero" src="Harsh image.jpg">
             </div>
         </div>
     </section>
@@ -376,10 +375,23 @@
             </span>
         </div>
     </footer>
-    <!-- Javascript -->
+    <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script>
+        function toggleHide() {
+            let navbarSupportedContent = document.getElementById('navbarSupportedContent');
+
+            if (navbarSupportedContent.style.display != 'none') {
+                navbarSupportedContent.style.display = 'none';
+            }
+            else {
+                navbarSupportedContent.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 
 </html>
