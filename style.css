@@ -12,6 +12,14 @@ a:hover {
     color: yellow;
 }
 
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
 /* About CSS */
 #about_p {
     font-size: 18px;
@@ -32,7 +40,7 @@ a:hover {
 }
 
 /* Contact Us */
-#contact_h1{
+#contact_h1 {
     margin-top: 30px;
 }
 
